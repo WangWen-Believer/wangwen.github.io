@@ -5,6 +5,11 @@ const updateHeader = () => {
     return;
   }
 
+  if (document.body.classList.contains("resume-body")) {
+    header.classList.add("is-scrolled");
+    return;
+  }
+
   header.classList.toggle("is-scrolled", window.scrollY > 40);
 };
 
