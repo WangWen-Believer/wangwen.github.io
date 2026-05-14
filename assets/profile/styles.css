@@ -1230,10 +1230,15 @@ h3 {
 .cv-footer-grid {
   display: grid;
   grid-template-columns: 44% minmax(0, 1fr);
+  align-items: start;
   gap: 32px;
   margin-top: 28px;
   padding-top: 24px;
   border-top: 1px solid #c6d0dc;
+}
+
+.cv-footer-grid .cv-block + .cv-block {
+  margin-top: 0;
 }
 
 .cv-check-list,
@@ -1382,6 +1387,10 @@ h3 {
 
   .cv-block + .cv-block {
     margin-top: 5mm;
+  }
+
+  .cv-footer-grid .cv-block + .cv-block {
+    margin-top: 0;
   }
 
   .cv-block h2 {
